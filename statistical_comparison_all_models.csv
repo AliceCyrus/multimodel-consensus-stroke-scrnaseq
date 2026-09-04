@@ -1,0 +1,7 @@
+Model 1,Model 2,AUC_1,AUC_2,McNemar χ²,McNemar p-value,Significant (McNemar),DeLong Z,DeLong p-value,Significant (DeLong)
+CNN+XGBoost,Logistic Regression,0.9954,0.9968,138.4890,0.0000,Yes,-4.2385,0.0000,Yes
+CNN+XGBoost,Random Forest,0.9954,0.9932,19.4821,0.0000,Yes,5.4993,0.0000,Yes
+CNN+XGBoost,XGBoost,0.9954,0.9966,8.5306,0.0035,Yes,-3.9887,0.0001,Yes
+Logistic Regression,Random Forest,0.9968,0.9932,219.6670,0.0000,Yes,9.8715,0.0000,Yes
+Logistic Regression,XGBoost,0.9968,0.9966,88.3444,0.0000,Yes,0.9963,0.3191,No
+Random Forest,XGBoost,0.9932,0.9966,76.4446,0.0000,Yes,-12.4475,0.0000,Yes

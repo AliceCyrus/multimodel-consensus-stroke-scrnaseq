@@ -1,0 +1,66 @@
+
+================================================================================
+GENE-LEVEL INTERPRETABILITY ANALYSIS - SUMMARY REPORT
+================================================================================
+
+METHODS ANALYZED: 7
+  • Logistic Regression
+  • Random Forest
+  • XGBoost
+  • scGPT
+  • scBERT
+  • scFormer
+  • Geneformer
+
+CONVERGENCE ANALYSIS:
+--------------------
+Average Jaccard Similarity: 0.305
+Range: [0.000 - 1.000]
+
+CONSENSUS GENES:
+---------------
+Total consensus genes (≥4 models): 63
+
+Top 10 Consensus Genes:
+  gene  count  frequency
+  Spp1      6   0.857143
+Cdkn1a      6   0.857143
+ Cd24a      6   0.857143
+  Cd72      6   0.857143
+  Fth1      6   0.857143
+   Lpl      6   0.857143
+H2-Eb1      6   0.857143
+Ifitm6      6   0.857143
+ H2-Aa      6   0.857143
+ Tubb6      6   0.857143
+
+BIOLOGICAL INTERPRETATION:
+-------------------------
+These consensus genes represent high-confidence biomarkers identified by 
+multiple independent interpretability methods. They warrant:
+
+1. Literature validation (known stroke markers)
+2. GO enrichment analysis  
+3. Pathway analysis (IL-1, inflammation, apoptosis)
+4. Experimental validation (RT-qPCR, Western blot)
+
+FILES GENERATED:
+---------------
+  • gene_convergence_heatmap.png
+  • gene_signature_convergence.csv
+  • genes_xgboost.csv
+  • genes_logistic_regression.csv
+  • genes_random_forest.csv
+  • consensus_genes.csv
+  • il1_validation.json
+  • consensus_distribution.png
+
+NEXT STEPS FOR PUBLICATION:
+---------------------------
+1. ✅ Gene-level importance extracted
+2. ✅ Cross-method convergence analyzed
+3. ⏳ GO enrichment on consensus genes
+4. ⏳ Literature comparison
+5. ⏳ Experimental validation plan
+
+================================================================================

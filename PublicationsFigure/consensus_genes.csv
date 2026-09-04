@@ -1,0 +1,64 @@
+gene,count,models,frequency
+Spp1,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Cdkn1a,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Cd24a,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Cd72,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Fth1,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Lpl,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+H2-Eb1,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Ifitm6,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+H2-Aa,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Tubb6,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Il1rn,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Napsa,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Sirpb1c,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Adam8,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Plac8,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Ch25h,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Anxa1,6,"Logistic Regression, Random Forest, XGBoost, scGPT, scBERT, scFormer",0.8571428571428571
+Sepp1,5,"Logistic Regression, XGBoost, scGPT, scBERT, scFormer",0.7142857142857143
+Dbp,5,"Logistic Regression, XGBoost, scGPT, scBERT, scFormer",0.7142857142857143
+Emp1,5,"Logistic Regression, XGBoost, scGPT, scBERT, scFormer",0.7142857142857143
+Plat,5,"Logistic Regression, XGBoost, scGPT, scBERT, scFormer",0.7142857142857143
+Ccr2,5,"Random Forest, XGBoost, scGPT, scBERT, scFormer",0.7142857142857143
+Tgtp2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Serpina3n,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Lcn2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Mnda,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+H2-Ab1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ednrb,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Hmgcs2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Adm,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Iigp1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Stmn2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Actb,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Fbln5,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+8430408G22Rik,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Cd74,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Igtp,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ifitm1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Igfbp6,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Lrg1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Gm2564,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Angpt2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ackr1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Gm4955,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Pyhin1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ifit3,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Gfap,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ifi47,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Gbp2,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Mgp,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Tgtp1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+AA467197,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Igfbp3,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Kcnj8,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Gbp4,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Slc7a11,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Timp1,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ccl19,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Ifi205,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Cxcl12,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Cfh,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Nnat,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714
+Car4,4,"Logistic Regression, scGPT, scBERT, scFormer",0.5714285714285714

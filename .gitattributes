@@ -1,0 +1,21 @@
+# Normalise line endings so the repo is identical on Windows, macOS and Linux.
+* text=auto eol=lf
+
+# Shell scripts must keep LF or they fail on Linux with "bad interpreter".
+*.sh text eol=lf
+
+# Binary - never touch these.
+*.png binary
+*.pdf binary
+*.pptx binary
+*.gz binary
+*.pt binary
+*.pkl binary
+*.mtx binary
+
+# Collapse generated result files in pull request diffs.
+results_*.json linguist-generated=true
+*.csv linguist-generated=true
+
+# Report the repository as Python/R rather than as documentation.
+docs/* linguist-documentation=true

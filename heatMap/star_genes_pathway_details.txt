@@ -1,0 +1,627 @@
+STAR GENES AND THEIR PATHWAYS
+==============================
+
+Ifitm6 * (appears in 13 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to virus
+    - response to type II interferon
+
+Tgtp2 * (appears in 25 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to protozoan
+    - autophagosome assembly
+    - autophagosome organization
+    - vacuole organization
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Iigp1 * (appears in 26 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to bacterium
+    - response to protozoan
+    - autophagosome assembly
+    - autophagosome organization
+    - vacuole organization
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Igtp * (appears in 30 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to bacterium
+    - response to protozoan
+    - response to virus
+    - regulation of response to stress
+    - autophagosome assembly
+    - autophagosome organization
+    - positive regulation of immune response
+    - vacuole organization
+    - response to type II interferon
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Ifitm1 * (appears in 13 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to virus
+    - response to type II interferon
+
+Ifit3 * (appears in 14 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to bacterium
+    - response to virus
+
+Ifi47 * (appears in 23 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - autophagosome assembly
+    - autophagosome organization
+    - vacuole organization
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Gbp2 * (appears in 27 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to bacterium
+    - response to protozoan
+    - response to virus
+    - regulation of response to stress
+    - positive regulation of immune response
+    - response to type II interferon
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Tgtp1 * (appears in 28 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to bacterium
+    - response to protozoan
+    - response to virus
+    - autophagosome assembly
+    - autophagosome organization
+    - vacuole organization
+    - response to type II interferon
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Ifi205 * (appears in 15 pathways)
+  Pathways:
+    - response to interferon-beta
+    - response to cytokine
+    - response to peptide
+    - cellular response to interferon-beta
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to bacterium
+    - regulation of response to stress
+    - positive regulation of immune response
+
+Cd24a * (appears in 19 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to bacterium
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+
+Il1rn * (appears in 5 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - cellular response to cytokine stimulus
+    - signaling receptor binding
+    - cytokine receptor binding
+
+Ch25h * (appears in 9 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - innate immune response
+
+Ccr2 * (appears in 14 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - cellular response to cytokine stimulus
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - signaling receptor binding
+    - cytokine receptor binding
+
+Serpina3n * (appears in 7 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+
+Lcn2 * (appears in 12 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - response to bacterium
+    - response to virus
+
+Cd74 * (appears in 23 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - innate immune response
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - response to type II interferon
+    - MHC protein complex binding
+    - signaling receptor binding
+
+Kcnj8 * (appears in 14 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - innate immune response
+    - response to bacterium
+    - response to virus
+    - regulation of response to stress
+    - positive regulation of immune response
+    - signaling receptor binding
+
+Gbp4 * (appears in 24 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - defense response to protozoan
+    - innate immune response
+    - response to bacterium
+    - response to protozoan
+    - response to virus
+    - regulation of response to stress
+    - response to type II interferon
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Ccl19 * (appears in 21 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - positive regulation of lymphocyte activation
+    - response to virus
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - signaling receptor binding
+    - cytokine receptor binding
+
+Cxcl12 * (appears in 14 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - cellular response to cytokine stimulus
+    - regulation of response to stress
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - signaling receptor binding
+    - cytokine receptor binding
+
+Cfh * (appears in 12 pathways)
+  Pathways:
+    - response to cytokine
+    - response to peptide
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - innate immune response
+    - regulation of response to stress
+    - leukocyte cell-cell adhesion
+    - positive regulation of immune response
+
+Lpl * (appears in 7 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+    - regulation of response to stress
+    - signaling receptor binding
+
+Adam8 * (appears in 19 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - innate immune response
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - signaling receptor binding
+    - cytokine receptor binding
+
+Plac8 * (appears in 5 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+
+Anxa1 * (appears in 17 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - innate immune response
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+
+Ednrb * (appears in 7 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+    - regulation of response to stress
+    - signaling receptor binding
+
+Hmgcs2 * (appears in 5 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+
+Adm * (appears in 8 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - defense response to symbiont
+    - defense response to other organism
+    - response to bacterium
+    - signaling receptor binding
+
+Lrg1 * (appears in 8 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+    - leukocyte cell-cell adhesion
+    - signaling receptor binding
+    - cytokine receptor binding
+
+AA467197 * (appears in 5 pathways)
+  Pathways:
+    - response to other organism
+    - response to external biotic stimulus
+    - response to biotic stimulus
+    - biological process involved in interspecies interaction between organisms
+    - response to bacterium
+
+H2-Eb1 * (appears in 9 pathways)
+  Pathways:
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - leukocyte cell-cell adhesion
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - MHC protein complex binding
+    - signaling receptor binding
+    - peptide antigen binding
+
+H2-Aa * (appears in 10 pathways)
+  Pathways:
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - MHC protein complex binding
+    - peptide antigen binding
+
+H2-Ab1 * (appears in 8 pathways)
+  Pathways:
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - leukocyte cell-cell adhesion
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - positive regulation of immune response
+    - MHC protein complex binding
+    - peptide antigen binding
+
+Actb * (appears in 12 pathways)
+  Pathways:
+    - positive regulation of lymphocyte activation
+    - regulation of response to stress
+    - positive regulation of T cell activation
+    - positive regulation of T cell differentiation
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte differentiation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - ribonucleoside triphosphate phosphatase activity
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+
+Tubb6 * (appears in 8 pathways)
+  Pathways:
+    - GTPase activity
+    - ribonucleoside triphosphate phosphatase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - pyrophosphatase activity
+    - hydrolase activity acting on acid anhydrides
+    - hydrolase activity acting on acid anhydrides in phosphorus-containing anhydrides
+

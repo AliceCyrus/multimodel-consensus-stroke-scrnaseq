@@ -1,0 +1,370 @@
+STAR GENES AND THEIR PATHWAYS
+==============================
+
+Tgtp2 * (appears in 8 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - defense response to protozoan
+    - response to protozoan
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+
+Iigp1 * (appears in 8 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - defense response to protozoan
+    - response to protozoan
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+
+Igtp * (appears in 10 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - defense response to protozoan
+    - response to protozoan
+    - response to virus
+    - response to type II interferon
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+
+Ifi47 * (appears in 6 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+
+Gbp2 * (appears in 12 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - defense response to protozoan
+    - response to protozoan
+    - response to virus
+    - response to type II interferon
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - cytokine binding
+    - enzyme inhibitor activity
+
+Tgtp1 * (appears in 10 pathways)
+  Pathways:
+    - response to interferon-beta
+    - cellular response to interferon-beta
+    - defense response to protozoan
+    - response to protozoan
+    - response to virus
+    - response to type II interferon
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+
+Cd24a * (appears in 13 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - positive regulation of cell-cell adhesion
+    - regulation of leukocyte apoptotic process
+    - regulation of T cell activation
+    - regulation of lymphocyte differentiation
+    - leukocyte apoptotic process
+
+H2-Eb1 * (appears in 15 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - positive regulation of cell-cell adhesion
+    - regulation of T cell activation
+    - antigen processing and presentation of exogenous peptide antigen via MHC class II
+    - antigen processing and presentation of peptide antigen via MHC class II
+    - MHC class II protein complex binding
+    - MHC protein complex binding
+    - CD4 receptor binding
+    - peptide antigen binding
+
+H2-Aa * (appears in 18 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - positive regulation of cell-cell adhesion
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - regulation of lymphocyte differentiation
+    - antigen processing and presentation of exogenous peptide antigen via MHC class II
+    - antigen processing and presentation of peptide antigen via MHC class II
+    - regulation of T cell differentiation
+    - MHC class II protein complex binding
+    - MHC protein complex binding
+    - peptide antigen binding
+
+Adam8 * (appears in 23 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - positive regulation of cell-cell adhesion
+    - myeloid leukocyte migration
+    - regulation of leukocyte apoptotic process
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - regulation of lymphocyte differentiation
+    - leukocyte apoptotic process
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - regulation of T cell differentiation
+    - cytokine receptor binding
+    - integrin binding
+
+Anxa1 * (appears in 23 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - positive regulation of cell-cell adhesion
+    - myeloid leukocyte migration
+    - regulation of leukocyte apoptotic process
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - regulation of lymphocyte differentiation
+    - leukocyte apoptotic process
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - regulation of T cell differentiation
+    - wound healing
+    - enzyme inhibitor activity
+
+Ccr2 * (appears in 22 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - positive regulation of cell-cell adhesion
+    - myeloid leukocyte migration
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - regulation of lymphocyte differentiation
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - regulation of T cell differentiation
+    - wound healing
+    - cytokine receptor binding
+    - cytokine binding
+
+H2-Ab1 * (appears in 14 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - positive regulation of cell-cell adhesion
+    - regulation of T cell activation
+    - antigen processing and presentation of exogenous peptide antigen via MHC class II
+    - antigen processing and presentation of peptide antigen via MHC class II
+    - MHC class II protein complex binding
+    - MHC protein complex binding
+    - peptide antigen binding
+
+Actb * (appears in 13 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - positive regulation of cell-cell adhesion
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - regulation of lymphocyte differentiation
+    - regulation of T cell differentiation
+
+Cd74 * (appears in 28 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - positive regulation of cell-cell adhesion
+    - myeloid leukocyte migration
+    - regulation of leukocyte apoptotic process
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - response to type II interferon
+    - regulation of lymphocyte differentiation
+    - leukocyte apoptotic process
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - antigen processing and presentation of exogenous peptide antigen via MHC class II
+    - antigen processing and presentation of peptide antigen via MHC class II
+    - regulation of T cell differentiation
+    - MHC class II protein complex binding
+    - MHC protein complex binding
+    - cytokine binding
+    - CD4 receptor binding
+
+Ccl19 * (appears in 24 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - positive regulation of lymphocyte activation
+    - positive regulation of T cell activation
+    - positive regulation of leukocyte cell-cell adhesion
+    - positive regulation of leukocyte activation
+    - regulation of leukocyte cell-cell adhesion
+    - positive regulation of cell activation
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - positive regulation of cell-cell adhesion
+    - myeloid leukocyte migration
+    - regulation of leukocyte apoptotic process
+    - positive regulation of T cell differentiation
+    - regulation of T cell activation
+    - positive regulation of lymphocyte differentiation
+    - response to virus
+    - regulation of lymphocyte differentiation
+    - leukocyte apoptotic process
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - regulation of T cell differentiation
+    - cytokine receptor binding
+    - cytokine activity
+
+Cxcl12 * (appears in 13 pathways)
+  Pathways:
+    - leukocyte cell-cell adhesion
+    - regulation of leukocyte cell-cell adhesion
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - myeloid leukocyte migration
+    - regulation of leukocyte apoptotic process
+    - leukocyte apoptotic process
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - cytokine receptor binding
+    - integrin binding
+    - cytokine activity
+
+Cdkn1a * (appears in 5 pathways)
+  Pathways:
+    - positive regulation of lymphocyte activation
+    - positive regulation of leukocyte activation
+    - positive regulation of cell activation
+    - wound healing
+    - enzyme inhibitor activity
+
+Gbp4 * (appears in 9 pathways)
+  Pathways:
+    - defense response to protozoan
+    - response to protozoan
+    - response to virus
+    - response to type II interferon
+    - GTPase activity
+    - GTP binding
+    - guanyl nucleotide binding
+    - guanyl ribonucleotide binding
+    - enzyme inhibitor activity
+
+Spp1 * (appears in 8 pathways)
+  Pathways:
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - myeloid leukocyte migration
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+    - integrin binding
+    - cytokine activity
+
+Ch25h * (appears in 5 pathways)
+  Pathways:
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+
+Ednrb * (appears in 6 pathways)
+  Pathways:
+    - leukocyte migration
+    - leukocyte chemotaxis
+    - myeloid leukocyte migration
+    - cell chemotaxis
+    - chemotaxis
+    - taxis
+
+Angpt2 * (appears in 5 pathways)
+  Pathways:
+    - chemotaxis
+    - taxis
+    - wound healing
+    - cytokine receptor binding
+    - receptor antagonist activity
+

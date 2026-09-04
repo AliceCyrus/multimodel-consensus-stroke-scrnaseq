@@ -1,0 +1,65 @@
+
+======================================================================
+BASELINE MODELS COMPARISON - SUMMARY REPORT
+======================================================================
+
+DATASET INFORMATION:
+-------------------
+Training samples: 37883 cells
+Test samples: 16716 cells
+Features: 50 PCs
+Class distribution (Train): 21329 Stroke, 16554 Control
+Class distribution (Test): 7208 Stroke, 9508 Control
+
+MODELS EVALUATED:
+-----------------
+1. Logistic Regression (Linear baseline)
+2. Random Forest (Ensemble method)
+3. XGBoost (Gradient boosting)
+4. CNN+XGBoost (Deep learning + ensemble)
+
+BEST PERFORMING MODEL:
+---------------------
+Model: Logistic Regression
+AUC-ROC: 0.9968
+
+PERFORMANCE SUMMARY (Test Set):
+-------------------------------
+              Model  Accuracy  Sensitivity  Specificity  F1-Score  AUC-ROC
+Logistic Regression  0.953697     0.993757     0.923328  0.948742 0.996809
+            XGBoost  0.937605     0.994034     0.894825  0.932154 0.996569
+        CNN+XGBoost  0.932400     0.994312     0.885465  0.926927 0.995365
+      Random Forest  0.923845     0.990844     0.873054  0.918172 0.993246
+
+FILES GENERATED:
+---------------
+1. Results (JSON):
+   - results_logistic_regression.json
+   - results_random_forest.json
+   - results_xgboost.json
+   - results_cnn_xgboost.json (from previous run)
+
+2. Trained Models (PKL):  # ← ADDED
+   - model_logistic_regression.pkl
+   - model_random_forest.pkl
+   - model_xgboost.pkl
+
+3. Tables:
+   - performance_table_all_models.csv
+   - performance_table_all_models.tex (LaTeX)
+   - statistical_comparison_all_models.csv
+
+4. Figures (300 DPI):
+   - figures_all_models/fig1_roc_curves.png
+   - figures_all_models/fig2_pr_curves.png
+   - figures_all_models/fig3_cv_distributions.png
+   - figures_all_models/fig4_radar_chart.png
+
+NEXT STEPS:
+-----------
+1. Review figures in 'figures_all_models/' folder
+2. Check statistical comparisons in CSV files
+3. Models saved for Phase 2 gene extraction  # ← ADDED
+4. Run: python integrated_interpretability_pipeline.py  # ← ADDED
+
+======================================================================

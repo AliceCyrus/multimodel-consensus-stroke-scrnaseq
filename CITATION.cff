@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+title: >-
+  Multi-Model Machine Learning Consensus Identifies a Dual-Interferon Gene
+  Signature in Ischemic Stroke
+message: >-
+  If you use this software or the derived results, please cite both this
+  repository and the associated paper.
+type: software
+authors:
+  - given-names: Alisha
+    family-names: Shamim
+    affiliation: Independent Researcher
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'   # TODO: add ORCID
+  - given-names: Angana
+    family-names: Chakroborty
+    affiliation: >-
+      West Bengal Education Service, Department of Higher Education,
+      Government of West Bengal, Kolkata, India
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'   # TODO: add ORCID
+repository-code: >-
+  https://github.com/AliceCyrus/multimodel-consensus-stroke-scrnaseq
+abstract: >-
+  A multi-model consensus framework for single-cell biomarker discovery in
+  ischemic stroke. Eight machine learning models spanning classical, hybrid and
+  transformer-inspired architectures are trained on mouse MCAO scRNA-seq data
+  (GEO GSE174574) using a strict subject-wise train/test split. Gene-level
+  importance is recovered from PCA space by back-projection through the
+  loadings matrix, and genes selected by at least four of six interpretable
+  models are retained. The resulting 63-gene consensus signature is enriched
+  for Type I and Type II interferon response genes and includes Il1rn, the
+  target of the FDA-approved drug Anakinra.
+keywords:
+  - ischemic stroke
+  - single-cell RNA sequencing
+  - machine learning
+  - biomarker discovery
+  - consensus analysis
+  - interferon signaling
+  - neuroinflammation
+  - transformer models
+license: MIT
+version: 1.0.0
+date-released: '2026-08-26'
+references:
+  - type: article
+    title: >-
+      Single-cell RNA-seq reveals the transcriptional landscape in ischemic
+      stroke
+    authors:
+      - given-names: Kexin
+        family-names: Zheng
+      - given-names: Lan
+        family-names: Lin
+      - given-names: Wei
+        family-names: Jiang
+      - given-names: Lin
+        family-names: Chen
+      - given-names: Xiaojun
+        family-names: Zhang
+      - given-names: Qian
+        family-names: Zhang
+      - given-names: Yi
+        family-names: Ren
+      - given-names: Junwei
+        family-names: Hao
+    journal: Journal of Cerebral Blood Flow & Metabolism
+    volume: 42
+    issue: 1
+    start: 56
+    end: 73
+    year: 2022
+    notes: 'Source dataset, GEO accession GSE174574'

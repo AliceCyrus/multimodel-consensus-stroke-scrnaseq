@@ -1,0 +1,84 @@
+## Methodology Details (for PowerPoint)
+
+### 1. Dataset Details
+- **Source**: Raw 10X scRNA‑seq data in `StrokeData/` (add GEO/ArrayExpress ID if known).
+- **Species**: Mouse (C57BL/6J).
+- **Samples**: 6 biological replicates – 3 control (sham1‑sham3) and 3 stroke (mcao1‑mcao3).
+- **Train/Test split**: Sample‑based, no cell leakage.
+  - Training: sham1, sham2, mcao1, mcao2 (≈ 67 %).
+  - Test: sham3, mcao3 (≈ 33 %).
+- **Time‑point post‑stroke**: *to be specified*.
+- **Cell types**: All cell types captured; QC filters applied (see below).
+
+### 2. Pre‑processing (R – `DP_Diff_Test&Train.R`)
+- **QC filtering**: `nFeature_RNA > 200` & `< 2500`; `percent.mt < 10 %`.
+- **Normalization**: Seurat `NormalizeData` (LogNormalize, scale factor 10 000).
+- **Variable feature selection**: `FindVariableFeatures` (vst, 3000 genes).
+- **Scaling**: `ScaleData` on variable features.
+- **PCA**: `RunPCA` (50 PCs retained).
+- **Feature alignment**: Intersection of gene names between train and test.
+- **Outputs**: `stroke_pca_train.csv`, `stroke_pca_test.csv`, `stroke_labels_train.csv`, `stroke_labels_test.csv`.
+- **Initial gene count**: ~15‑20 k after QC (exact number not hard‑coded).
+- **Batch correction**: None.
+
+### 3. Train/Test Split (already defined in the R script)
+- **Split ratio**: 4 train / 2 test samples (≈ 67 % train, 33 % test).
+- **Cross‑validation**: 10‑fold CV with 1 000 bootstrap resamples (`comparisionModel.py`).
+- **Random seed**: 42 (used for all scikit‑learn models).
+- **Stratification**: Binary class balanced via `class_weight='balanced'`; CV folds stratified.
+
+### 4. Model‑Specific Parameters
+#### 4.1 Classical ML (`comparisionModel.py`)
+- **Logistic Regression**: `max_iter=1000`, `solver='lbfgs'`, `class_weight='balanced'`, `n_jobs=-1`, `random_state=42`.
+- **Random Forest**: `n_estimators=200`, `max_depth=20`, `min_samples_split=5`, `min_samples_leaf=2`, `max_features='sqrt'`, `class_weight='balanced'`, `n_jobs=-1`, `random_state=42`.
+- **XGBoost**: `n_estimators=200`, `max_depth=6`, `learning_rate=0.1`, `subsample=0.8`, `colsample_bytree=0.8`, `eval_metric='logloss'`, `use_label_encoder=False`, `random_state=42`.
+
+#### 4.2 CNN + XGBoost (`cnn_xgboost_model.py` – details to be filled)
+- **CNN architecture**: *to be specified* (layers, filters, kernel sizes).
+- **Feature feeding**: Latent CNN representation supplied to XGBoost.
+- **Training hyper‑parameters**: *to be specified* (batch size, epochs, learning rate, optimizer).
+
+#### 4.3 Foundation Models (`fixed_foundation_models.py`)
+| Model | Architecture (unchanged) | Training config |
+|-------|--------------------------|----------------|
+| scGPT | `d_model=256`, `nhead=8`, `num_layers=4` | `batch_size=128`, `epochs=30`, `lr=2e‑4`, `early_stopping_patience=5`, mixed‑precision, checkpoint `model_checkpoints/scgpt_best.pt` |
+| scBERT | `d_model=512`, `nhead=8`, `num_layers=6` | Same as scGPT, checkpoint `model_checkpoints/scbert_best.pt` |
+| scFormer | `d_model=384`, `nhead=6`, `num_layers=3` | Same as scGPT, checkpoint `model_checkpoints/scformer_best.pt` |
+| Geneformer | `d_model=512`, `nhead=8`, `num_layers=4` | Same as scGPT, checkpoint `model_checkpoints/geneformer_best.pt` |
+- **Fine‑tuning**: All layers trainable, AdamW optimizer, cosine‑annealing LR schedule.
+- **Gene‑importance extraction**: `attention_extractor.py` (or corrected `fix_geneformer_extraction.py`) maps model positional embeddings onto PCA loadings, producing `transformer_importances/gene_importance_<model>.csv`.
+
+### 5. Consensus Gene Identification (`integrated_interpretability_pipeline.py`)
+- **Top‑N per model**: 100 genes.
+- **Consensus rule**: Gene must appear in ≥ 4 models (`min_models=4`).
+- **Typical output**: ~ 65 consensus genes (depends on data).
+- **Outputs**: `gene_level_results/consensus_genes.csv`, `consensus_distribution.png`.
+
+### 6. Software & Library Versions
+- **Python**: 3.7
+- **pandas**: ≥ 1.2
+- **numpy**: ≥ 1.19
+- **scikit‑learn**: ≥ 0.24
+- **xgboost**: ≥ 1.5
+- **shap**: ≥ 0.40
+- **torch**: ≥ 1.9
+- **seaborn / matplotlib**: ≥ 0.11
+- **mygene** (optional): ≥ 3.2
+- **R**: ≥ 4.0, **Seurat**: ≥ 4.0
+
+### 7. Evaluation Metrics
+- **AUC‑ROC**, **Accuracy**, **Sensitivity (Recall)**, **Specificity**, **F1‑Score** (binary case → macro = micro).
+- **Computation**: `roc_auc_score`, `accuracy_score`, `recall_score`, `precision_score`, `f1_score` from scikit‑learn.
+- **Saved**: `results_<model>.json`, compiled into `performance_table_all_models.csv` and figures (ROC, PR, radar chart).
+
+### 8. Additional Files / Assets
+- **Workflow diagram**: `.agent/workflows/rerun_pipeline.md` (markdown). 
+- **Figures**: `figures_all_models/` (ROC, PR, CV distributions, radar chart). 
+- **Tables**: `performance_table_all_models.csv`, `statistical_comparison_all_models.csv`, `consensus_genes.csv`, `CLINICAL_CANDIDATES_STRICT.csv`. 
+- **GO enrichment**: `geneGoEnrichment/` (produced by `go_enrichment.R`). 
+- **Human orthology validation**: `human_orthology_validation_FULL.csv`, `CLINICAL_CANDIDATES_STRICT.csv`. 
+- **Model checkpoints**: `model_checkpoints/` (one `.pt` per foundation model). 
+- **Saved baseline models**: `model_logistic_regression.pkl`, `model_random_forest.pkl`, `model_xgboost.pkl`.
+
+---
+*All sections can be copied directly into PowerPoint slides. Fill in any “to be specified” items with the exact values from your lab notebook.*

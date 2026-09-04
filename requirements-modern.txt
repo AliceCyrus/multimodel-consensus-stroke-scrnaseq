@@ -1,0 +1,37 @@
+# ============================================================================
+# Python dependencies - modern interpreter (Python >= 3.10)
+# ============================================================================
+# Use this file if you cannot install the end-of-life Python 3.7 environment
+# pinned in requirements.txt.
+#
+#   pip install -r requirements-modern.txt
+#
+# IMPORTANT: results are reproducible in structure but not bit-identical to
+# the published numbers. Known sources of drift between this set and the
+# recorded 3.7 environment:
+#
+#   * scikit-learn changed the default `n_init`/solver behaviour and some
+#     tie-breaking in tree splits between 1.0 and 1.5.
+#   * XGBoost 2.x changed the default tree method and histogram binning.
+#   * TensorFlow 1.15 -> 2.x is a breaking change; cnn_xgboostModel.py uses
+#     `tensorflow.keras`, which exists in both, but layer initialisers differ.
+#
+# Expect AUC values to agree to roughly three decimal places, and the
+# consensus gene list to overlap heavily but not exactly. If you need the
+# exact published numbers, use requirements.txt.
+# ============================================================================
+
+numpy>=1.26,<2.0
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.3
+xgboost>=2.0
+torch>=2.0
+tensorflow>=2.16
+shap>=0.44
+mlxtend>=0.23
+matplotlib>=3.8
+seaborn>=0.13
+
+# Optional, for map_mouse_to_human_orthologs.py
+mygene

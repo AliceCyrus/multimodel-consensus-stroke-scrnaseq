@@ -1,0 +1,36 @@
+{
+  "title": "Multi-Model Machine Learning Consensus Identifies a Dual-Interferon Gene Signature in Ischemic Stroke",
+  "description": "<p>Code and derived results for a multi-model consensus framework for single-cell biomarker discovery in ischemic stroke.</p><p>Eight machine learning models spanning classical (logistic regression, random forest, XGBoost), hybrid (CNN+XGBoost) and transformer-inspired (scGPT, scBERT, scFormer, Geneformer) architectures are trained on mouse MCAO single-cell RNA-seq data (GEO GSE174574; 6 animals, 54,599 cells) under a strict subject-wise train/test split. Gene-level importance is recovered from PCA space by back-projection through the loadings matrix. Genes selected by at least four of the six interpretable models form a 63-gene consensus signature enriched for Type I and Type II interferon response genes, including Il1rn, the target of the FDA-approved drug Anakinra.</p><p>Raw sequencing data are not included; they are publicly available at NCBI GEO under accession GSE174574.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Shamim, Alisha"
+    },
+    {
+      "name": "Chakroborty, Angana"
+    }
+  ],
+  "keywords": [
+    "ischemic stroke",
+    "single-cell RNA sequencing",
+    "machine learning",
+    "biomarker discovery",
+    "consensus analysis",
+    "interferon signaling",
+    "neuroinflammation",
+    "transformer models",
+    "scRNA-seq",
+    "computational biology"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174574",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "url"
+    }
+  ],
+  "language": "eng"
+}

@@ -1,0 +1,26 @@
+{
+  "il1_genes_checked": [
+    "Il1a",
+    "Il1b",
+    "Il1r1",
+    "Il1rap",
+    "Il1rn",
+    "Myd88",
+    "Irak1",
+    "Irak2",
+    "Irak4",
+    "Nfkb1",
+    "Nfkb2",
+    "Rela",
+    "Relb",
+    "Tnf",
+    "Il6",
+    "Ccl2",
+    "Cxcl1",
+    "Cxcl2"
+  ],
+  "il1_genes_found": [
+    "Il1rn"
+  ],
+  "enrichment": 0.05555555555555555
+}

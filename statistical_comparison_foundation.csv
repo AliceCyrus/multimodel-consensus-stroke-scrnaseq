@@ -1,0 +1,2 @@
+Model 1,Model 2,AUC_1,AUC_2,McNemar χ²,McNemar p-value,Significant (McNemar),DeLong Z,DeLong p-value,Significant (DeLong)
+scFormer,Geneformer,0.9927,0.9778,254.9569,0.0000,Yes,15.3043,0.0000,Yes

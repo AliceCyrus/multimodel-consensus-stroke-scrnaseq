@@ -33,93 +33,106 @@ manuscript_dir <- file.path(base_dir, "manuscript", "generic_latex", "figures")
 if (!dir.exists(output_dir))     dir.create(output_dir,     recursive = TRUE)
 if (!dir.exists(manuscript_dir)) dir.create(manuscript_dir, recursive = TRUE)
 
-# ---- Confirm all 6 sample folders exist ----------------------------------
-samples <- list(
-  list(name = "sham1", condition = "Control"),
-  list(name = "sham2", condition = "Control"),
-  list(name = "sham3", condition = "Control"),
-  list(name = "mcao1", condition = "Stroke"),
-  list(name = "mcao2", condition = "Stroke"),
-  list(name = "mcao3", condition = "Stroke")
-)
-
-for (s in samples) {
-  p <- file.path(data_dir, s$name)
-  if (!dir.exists(p)) {
-    stop(paste("ERROR: Sample folder not found:", p))
-  }
-  required <- c("barcodes.tsv.gz", "features.tsv.gz", "matrix.mtx.gz")
-  missing  <- required[!file.exists(file.path(p, required))]
-  if (length(missing) > 0) {
-    stop(paste("ERROR: Missing files in", p, ":", paste(missing, collapse = ", ")))
-  }
-  cat(sprintf("✓ Found: %s\n", p))
-}
-
-# ---- Load each sample with same params as DP_Diff_Test&Train.R ----------
-cat("\nLoading samples...\n")
-
-load_sample <- function(name, condition) {
-  path <- file.path(data_dir, name)
-  cat(sprintf("  Reading: %s\n", path))
-  data <- Read10X(data.dir = path)
-  obj  <- CreateSeuratObject(
-    counts      = data,
-    project     = name,
-    min.cells   = 3,      # same as DP_Diff_Test&Train.R line 15
-    min.features = 200    # same as DP_Diff_Test&Train.R line 15
-  )
-  obj$sample    <- name
-  obj$condition <- condition
-  return(obj)
-}
-
-sham1 <- load_sample("sham1", "Control")
-sham2 <- load_sample("sham2", "Control")
-sham3 <- load_sample("sham3", "Control")
-mcao1 <- load_sample("mcao1", "Stroke")
-mcao2 <- load_sample("mcao2", "Stroke")
-mcao3 <- load_sample("mcao3", "Stroke")
-
-cat(sprintf("\nCells loaded per sample (after min.cells=3, min.features=200):\n"))
-for (obj in list(sham1, sham2, sham3, mcao1, mcao2, mcao3)) {
-  cat(sprintf("  %s: %d cells\n", unique(obj$sample), ncol(obj)))
-}
-
-# ---- Merge all 6 samples -------------------------------------------------
-cat("\nMerging all 6 samples...\n")
-all_samples <- merge(
-  sham1,
-  y = list(sham2, sham3, mcao1, mcao2, mcao3),
-  add.cell.ids = c("sham1", "sham2", "sham3", "mcao1", "mcao2", "mcao3"),
-  project = "StrokeProject"
-)
-cat(sprintf("Merged: %d cells, %d genes\n", ncol(all_samples), nrow(all_samples)))
-
-# ---- Compute percent mitochondrial (same as DP_Diff_Test&Train.R line 41) --
-cat("\nComputing percent.mt...\n")
-all_samples[["percent.mt"]] <- PercentageFeatureSet(all_samples, pattern = "^mt-")
-
-# ---- Extract real QC metrics per cell ------------------------------------
-cat("Extracting QC metrics per cell...\n")
-qc_df <- all_samples@meta.data %>%
-  mutate(
-    cell_id      = rownames(.),
-    nFeature_RNA = nFeature_RNA,
-    nCount_RNA   = nCount_RNA,
-    percent_mt   = percent.mt,
-    sample       = sample,
-    condition    = condition,
-    passes_qc    = (nFeature_RNA > 200 &
-                    nFeature_RNA < 2500 &
-                    percent.mt   < 10)
-  ) %>%
-  select(cell_id, sample, condition, nFeature_RNA, nCount_RNA, percent_mt, passes_qc)
-
-# Save real QC metrics CSV
+# ---- Fast path: reuse the committed per-cell QC table if present ----------
+# qc_metrics_per_cell.csv is written by this script from the raw 10x data and
+# is distributed with the repository. If it exists, the figure is regenerated
+# from it directly, so the ~250 MB raw download is not needed for this step.
 qc_csv <- file.path(base_dir, "qc_metrics_per_cell.csv")
-write.csv(qc_df, qc_csv, row.names = FALSE)
-cat(sprintf("✓ Saved real QC metrics: %s (%d cells)\n", qc_csv, nrow(qc_df)))
+if (file.exists(qc_csv)) {
+  cat(sprintf("Using existing QC table: %s\n", qc_csv))
+  qc_df <- read.csv(qc_csv, stringsAsFactors = FALSE)
+  qc_df$passes_qc <- as.logical(qc_df$passes_qc)
+  cat(sprintf("  %d cells loaded\n", nrow(qc_df)))
+} else {
+  # ---- Confirm all 6 sample folders exist ----------------------------------
+  samples <- list(
+    list(name = "sham1", condition = "Control"),
+    list(name = "sham2", condition = "Control"),
+    list(name = "sham3", condition = "Control"),
+    list(name = "mcao1", condition = "Stroke"),
+    list(name = "mcao2", condition = "Stroke"),
+    list(name = "mcao3", condition = "Stroke")
+  )
+
+  for (s in samples) {
+    p <- file.path(data_dir, s$name)
+    if (!dir.exists(p)) {
+      stop(paste("ERROR: Sample folder not found:", p))
+    }
+    required <- c("barcodes.tsv.gz", "features.tsv.gz", "matrix.mtx.gz")
+    missing  <- required[!file.exists(file.path(p, required))]
+    if (length(missing) > 0) {
+      stop(paste("ERROR: Missing files in", p, ":", paste(missing, collapse = ", ")))
+    }
+    cat(sprintf("✓ Found: %s\n", p))
+  }
+
+  # ---- Load each sample with same params as DP_Diff_Test&Train.R ----------
+  cat("\nLoading samples...\n")
+
+  load_sample <- function(name, condition) {
+    path <- file.path(data_dir, name)
+    cat(sprintf("  Reading: %s\n", path))
+    data <- Read10X(data.dir = path)
+    obj  <- CreateSeuratObject(
+      counts      = data,
+      project     = name,
+      min.cells   = 3,      # same as DP_Diff_Test&Train.R line 15
+      min.features = 200    # same as DP_Diff_Test&Train.R line 15
+    )
+    obj$sample    <- name
+    obj$condition <- condition
+    return(obj)
+  }
+
+  sham1 <- load_sample("sham1", "Control")
+  sham2 <- load_sample("sham2", "Control")
+  sham3 <- load_sample("sham3", "Control")
+  mcao1 <- load_sample("mcao1", "Stroke")
+  mcao2 <- load_sample("mcao2", "Stroke")
+  mcao3 <- load_sample("mcao3", "Stroke")
+
+  cat(sprintf("\nCells loaded per sample (after min.cells=3, min.features=200):\n"))
+  for (obj in list(sham1, sham2, sham3, mcao1, mcao2, mcao3)) {
+    cat(sprintf("  %s: %d cells\n", unique(obj$sample), ncol(obj)))
+  }
+
+  # ---- Merge all 6 samples -------------------------------------------------
+  cat("\nMerging all 6 samples...\n")
+  all_samples <- merge(
+    sham1,
+    y = list(sham2, sham3, mcao1, mcao2, mcao3),
+    add.cell.ids = c("sham1", "sham2", "sham3", "mcao1", "mcao2", "mcao3"),
+    project = "StrokeProject"
+  )
+  cat(sprintf("Merged: %d cells, %d genes\n", ncol(all_samples), nrow(all_samples)))
+
+  # ---- Compute percent mitochondrial (same as DP_Diff_Test&Train.R line 41) --
+  cat("\nComputing percent.mt...\n")
+  all_samples[["percent.mt"]] <- PercentageFeatureSet(all_samples, pattern = "^mt-")
+
+  # ---- Extract real QC metrics per cell ------------------------------------
+  cat("Extracting QC metrics per cell...\n")
+  qc_df <- all_samples@meta.data %>%
+    mutate(
+      cell_id      = rownames(.),
+      nFeature_RNA = nFeature_RNA,
+      nCount_RNA   = nCount_RNA,
+      percent_mt   = percent.mt,
+      sample       = sample,
+      condition    = condition,
+      passes_qc    = (nFeature_RNA > 200 &
+                      nFeature_RNA < 2500 &
+                      percent.mt   < 10)
+    ) %>%
+    select(cell_id, sample, condition, nFeature_RNA, nCount_RNA, percent_mt, passes_qc)
+
+  # Save real QC metrics CSV
+  qc_csv <- file.path(base_dir, "qc_metrics_per_cell.csv")
+  write.csv(qc_df, qc_csv, row.names = FALSE)
+  cat(sprintf("✓ Saved real QC metrics: %s (%d cells)\n", qc_csv, nrow(qc_df)))
+}
+
 
 # Summary
 cat(sprintf("\nQC Summary:\n"))
@@ -133,8 +146,10 @@ for (s in unique(qc_df$sample)) {
 }
 
 # Use only QC-passing cells for the figure (same cells used in analysis)
-qc_pass <- qc_df %>% filter(passes_qc)
-cat(sprintf("\nPlotting %d QC-passing cells\n", nrow(qc_pass)))
+# Plot ALL cells (before filtering) so the reader can see the tails that
+# the thresholds remove. The dashed lines then mark exactly where the cuts fall.
+qc_pass <- qc_df
+cat(sprintf("\nPlotting %d cells (all cells, before QC filtering)\n", nrow(qc_pass)))
 
 # ---- Sample colour palette -----------------------------------------------
 sample_colors <- c(
@@ -212,8 +227,8 @@ fig_s1 <- (p1 | p2 | p3) +
   plot_annotation(
     title = "Supplementary Figure S1: Quality Control Metrics",
     subtitle = paste0(
-      sprintf("All 6 samples | %d cells after QC (nFeature: 200\u20132500, %%MT < 10%%)",
-              nrow(qc_pass)),
+      sprintf("All 6 samples | %d cells before QC, %d retained (nFeature 200\u20132500, %%MT < 10%%)",
+              nrow(qc_pass), sum(qc_pass$passes_qc)),
       " | Dashed lines show QC thresholds"
     ),
     theme = theme(
@@ -235,4 +250,4 @@ cat(sprintf("✓ Saved: %s\n", out2))
 cat("\n=== FigureS1 COMPLETE ===\n")
 cat("Data source: Real 10X raw data via Read10X() — same parameters as DP_Diff_Test&Train.R\n")
 cat("No simulation used. Per-cell QC values saved to: qc_metrics_per_cell.csv\n")
-cat(sprintf("Total cells plotted: %d (QC-passing cells)\n", nrow(qc_pass)))
+cat(sprintf("Total cells plotted: %d (all cells, before QC)\n", nrow(qc_pass)))
